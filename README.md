@@ -1,9 +1,11 @@
 Informações - DB
 
 -- Criar DB "paokentin"
+
 CREATE DATABASE paokentin;
 
 -- Criar tabela "Pao"
+
 CREATE TABLE IF NOT EXISTS Pao (
     id SERIAL PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
@@ -13,6 +15,7 @@ CREATE TABLE IF NOT EXISTS Pao (
 );
 
 -- Criar tabela "Fornada"
+
 CREATE TABLE IF NOT EXISTS Fornada (
     id SERIAL PRIMARY KEY,
     paoId INT NOT NULL,
@@ -21,6 +24,7 @@ CREATE TABLE IF NOT EXISTS Fornada (
 );
 
 -- Inserir pães
+
 INSERT INTO Pao (nome, descricao, tempoPreparo, cor) VALUES
 ('Frances', 'Pão francês tradicional', 120, 'AMARELO'),
 ('Pao Doce', 'Pão doce com açúcar e canela', 60, 'VERMELHO');
