@@ -1,4 +1,4 @@
-package com.ifpe.paokentin.model.entity;
+package com.ifpe.paokentin.domain.entities;
 
 import java.time.LocalDateTime;
 

@@ -1,13 +1,13 @@
-package com.ifpe.paokentin.model.repository;
+package com.ifpe.paokentin.infrastructure.repositories;
 
 import java.sql.*;
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.stereotype.Repository;
 
-import com.ifpe.paokentin.model.entity.Fornada;
+import com.ifpe.paokentin.domain.entities.Fornada;
+import com.ifpe.paokentin.infrastructure.services.ConnectionManager;
 
 @Repository
 public class FornadaRepository {
@@ -22,7 +22,7 @@ public class FornadaRepository {
 				Fornada f = new Fornada();
 				f.setId(rs.getInt("id"));
 				f.setPaoId(rs.getInt("paoid"));
-				// Converte diretamente para LocalDateTime
+
 				Timestamp ts = rs.getTimestamp("horainicio");
 				if (ts != null) {
 					f.setHoraInicio(ts.toLocalDateTime());

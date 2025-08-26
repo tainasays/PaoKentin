@@ -1,4 +1,4 @@
-package com.ifpe.paokentin.services;
+package com.ifpe.paokentin.domain.services;
 
 import java.sql.SQLException;
 import java.time.LocalDateTime;
@@ -8,9 +8,9 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.ifpe.paokentin.model.entity.Fornada;
-import com.ifpe.paokentin.model.entity.Pao;
-import com.ifpe.paokentin.model.repository.FornadaRepository;
+import com.ifpe.paokentin.domain.entities.Fornada;
+import com.ifpe.paokentin.domain.entities.Pao;
+import com.ifpe.paokentin.infrastructure.repositories.FornadaRepository;
 
 @Service
 public class FornadaService {

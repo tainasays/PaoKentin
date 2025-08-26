@@ -1,4 +1,5 @@
-package com.ifpe.paokentin.model.repository;
+package com.ifpe.paokentin.infrastructure.services;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -12,7 +13,7 @@ public class ConnectionManager {
 
 	private static Connection conn = null;
 
-	static Connection getCurrentConnection() throws SQLException {
+	public static Connection getCurrentConnection() throws SQLException {
 
 		if (conn == null)
 			try {
@@ -21,14 +22,13 @@ public class ConnectionManager {
 			} catch (ClassNotFoundException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
-			} 
-			
+			}
 
 		return conn;
 
 	}
 
-	static Connection getNewConnection() throws SQLException {
+	public static Connection getNewConnection() throws SQLException {
 		return DriverManager.getConnection(URL, USER, PASSWORD);
 	}
 }

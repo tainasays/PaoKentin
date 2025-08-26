@@ -1,4 +1,6 @@
-package com.ifpe.paokentin.model.entity;
+package com.ifpe.paokentin.domain.entities;
+
+import com.ifpe.paokentin.domain.enums.CorEnum;
 
 public class Pao {
 

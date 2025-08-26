@@ -1,4 +1,4 @@
-package com.ifpe.paokentin.services;
+package com.ifpe.paokentin.domain.services;
 
 import java.sql.SQLException;
 import java.util.List;
@@ -6,8 +6,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.ifpe.paokentin.model.entity.Pao;
-import com.ifpe.paokentin.model.repository.PaoRepository;
+import com.ifpe.paokentin.domain.entities.Pao;
+import com.ifpe.paokentin.infrastructure.repositories.PaoRepository;
 
 @Service
 public class PaoService {
