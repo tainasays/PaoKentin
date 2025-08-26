@@ -75,6 +75,7 @@ public class PaoRepository {
 				pao.setNome(rs.getString("nome"));
 				pao.setDescricao(rs.getString("descricao"));
 				pao.setTempoPreparo(rs.getLong("tempoPreparo"));
+				
 
 				String corStr = rs.getString("cor");
 				CorEnum cor = CorEnum.valueOf(corStr);
@@ -94,7 +95,7 @@ public class PaoRepository {
 			stmt.setString(1, pao.getNome());
 			stmt.setString(2, pao.getDescricao());
 			stmt.setLong(3, pao.getTempoPreparo());
-			stmt.setString(4, pao.getCor().name());
+			stmt.setString(4, pao.getCor().toString());
 
 			stmt.setInt(5, pao.getId());
 			stmt.executeUpdate();

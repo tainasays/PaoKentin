@@ -10,6 +10,7 @@ import com.ifpe.paokentin.domain.entities.Pao;
 
 @RestController
 @RequestMapping("paokentin/paes")
+@CrossOrigin(origins = "*") 
 public class PaoController extends BaseController {
 
 	@GetMapping("")

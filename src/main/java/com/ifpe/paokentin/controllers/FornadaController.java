@@ -7,6 +7,7 @@ import java.util.stream.Collectors;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -20,6 +21,7 @@ import com.ifpe.paokentin.domain.entities.Pao;
 @RestController
 @Controller
 @RequestMapping("paokentin/fornadas")
+@CrossOrigin(origins = "*") 
 public class FornadaController extends BaseController {
 
 	@GetMapping("")
