@@ -21,4 +21,5 @@ public class FornadaDTO {
     public LocalDateTime getHoraInicio() { return horaInicio; }
     public String getStatus() { return status; }
     public long getTempoRestante() { return tempoRestante; }
+
 }

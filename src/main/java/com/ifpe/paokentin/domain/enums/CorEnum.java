@@ -2,6 +2,6 @@ package com.ifpe.paokentin.domain.enums;
 
 public enum CorEnum {
 
-	AMARELO, AZUL, VERDE, VERMELHO, LARANJA, ROSA;
+	AMARELO, AZUL, BRANCO, CINZA, LARANJA, MARROM, PRETO, ROSA, VERDE, VERMELHO;
 
 }
